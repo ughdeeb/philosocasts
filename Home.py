@@ -16,7 +16,7 @@ def main():
     available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
-    st.sidebar.header("Podcast RSS Feeds")
+    st.sidebar.header("Podcast RSS Feeds  ")
 
     # Dropdown box
     st.sidebar.subheader("Available Podcasts Feeds")
@@ -64,8 +64,8 @@ def main():
 
     # User Input box
     st.sidebar.image("assets/plato.png")
-    st.sidebar.subheader("How to Philosophize a New Podcast Feed")
-    openaikey_url = st.sidebar.text_input("Paste your OpenAI API Key kre (sk-...)")
+    st.sidebar.subheader("Philosophize Your Own Podcast Feed:")
+    openai_api_key = st.sidebar.text_input("Paste your <a href="https://platform.openai.com/account/api-keys" target="_blank> OpenAI API Key </a> here (sk-...)", type = 'password')
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
