@@ -65,7 +65,10 @@ def main():
     # User Input box
     st.sidebar.image("assets/plato.png")
     st.sidebar.subheader("Philosophize Your Own Podcast Feed:")
-    openai_api_key = st.sidebar.text_input("Paste your <a href="https://platform.openai.com/account/api-keys" target="_blank> OpenAI API Key </a> here (sk-...)", type = 'password')
+    openai_api_key = st.sidebar.text_input(
+    label="Paste your [OpenAI API Key](https://platform.openai.com/account/api-keys) here (sk-...)",
+    type='password'
+)
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
