@@ -69,7 +69,7 @@ def main():
     label="Paste your [OpenAI API Key](https://platform.openai.com/account/api-keys) here (sk-...)",
     type='password'
 )
-    url = st.sidebar.text_input("Link to RSS Feed")
+    url = st.sidebar.text_input("Link to RSS Feed", placeholder ="Enter RSS Feed link")
 
     process_button = st.sidebar.button("Process Podcast Feed")
     st.sidebar.markdown("**Note**: Podcast processing can take upto 5 mins, please be patient.")
