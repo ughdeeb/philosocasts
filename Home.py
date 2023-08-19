@@ -26,11 +26,11 @@ def main():
 
         podcast_info = available_podcast_info[selected_podcast]
 
-        # Right section - Newsletter content
-        st.header("Newsletter Content")
+        # # Right section - Newsletter content
+        # st.header("Newsletter Content")
 
         # Display the podcast title
-        st.subheader("Platonic Dialogue Should be Here")
+
         st.write(podcast_info['podcast_details']['episode_title'])
 
         # Display the podcast summary and the cover image in a side-by-side layout
@@ -38,7 +38,7 @@ def main():
 
         with col1:
             # Display the podcast episode summary
-            st.subheader("Podcast Episode Summary")
+            st.subheader("Key Arguments from Podcast")
             st.write(podcast_info['podcast_summary'])
 
         with col2:
@@ -63,7 +63,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
     # User Input box
-    st.markdown("----")
+    st.markdown("---")
     st.sidebar.image("assets/plato.png")
     st.sidebar.subheader("Philosocast Your Own Podcast Feed:")
 
@@ -111,7 +111,7 @@ def main():
             st.write(podcast_info["podcast_guest"]['summary'])
 
         # Display the five key moments
-        st.subheader("Key Moments")
+        st.subheader("What would other philosophers say about this episode? 🤔")
         key_moments = podcast_info['podcast_highlights']
         for moment in key_moments.split('\n'):
             st.markdown(
