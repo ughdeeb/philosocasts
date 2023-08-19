@@ -63,6 +63,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
     # User Input box
+    st.markdown("----")
     st.sidebar.image("assets/plato.png")
     st.sidebar.subheader("Philosocast Your Own Podcast Feed:")
 
