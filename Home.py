@@ -64,15 +64,16 @@ def main():
 
     # User Input box
     st.sidebar.image("assets/plato.png")
-    st.sidebar.subheader("Philosophize Your Own Podcast Feed:")
+    st.sidebar.subheader("Philosocast Your Own Podcast Feed:")
+
     openai_api_key = st.sidebar.text_input(
-    label="Paste your [OpenAI API Key](https://platform.openai.com/account/api-keys) here (sk-...)",
+    label="Get your [OpenAI API Key](https://platform.openai.com/account/api-keys)", placeholder="Paste your OpenAI API Key here (sk-...)",
     type='password'
 )
-    url = st.sidebar.text_input("Link to RSS Feed", placeholder ="Enter RSS Feed link")
+    url = st.sidebar.text_input("Get a [Podcast RSS Feed](https://www.listennotes.com/)", placeholder ="Paste RSS Feed link")
 
-    process_button = st.sidebar.button("Process Podcast Feed")
-    st.sidebar.markdown("**Note**: Podcast processing can take upto 5 mins, please be patient.")
+    process_button = st.sidebar.button("Philosocast Your Podcast Feed!")
+    st.sidebar.markdown("**Note**: Philosocasting can take up to 5 minutes, please be patient.")
 
     if process_button:
 
