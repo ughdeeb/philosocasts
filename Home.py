@@ -10,7 +10,7 @@ st.set_page_config(
 #    initial_sidebar_state="expanded",
 )
 def main():
-    st.title("🤔 PhilosoCasts 🎧 ")
+    st.title("🤔 PhilosoCasts! 🎧 ")
 
     available_podcast_info = create_dict_from_json_files('.')
 
