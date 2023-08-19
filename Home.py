@@ -9,6 +9,7 @@ st.set_page_config(
 #    layout="wide",
 #    initial_sidebar_state="expanded",
 )
+
 def main():
     st.title("🤔 PhilosoCasts! 🎧 ")
 
@@ -62,7 +63,8 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
     # User Input box
-    st.sidebar.subheader("Add and Process New Podcast Feed")
+    st.sidebar.subheader("How to Philosophize a New Podcast Feed")
+    openaikey_url = st.sidebar.text_input("Paste your OpenAI API Key kre (sk-...)")
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
