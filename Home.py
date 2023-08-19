@@ -16,11 +16,11 @@ def main():
     available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
-    st.sidebar.header("Convert your favorite Podcasts into a Platonic Dialogue")
+    st.sidebar.header("Convert your favorite Podcasts into short Platonic Dialogues!")
 
     # Dropdown box
-    st.sidebar.subheader("Available Podcasts Feeds")
-    selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
+    st.sidebar.subheader("Available Podcasts Feeds to Try!")
+    selected_podcast = st.sidebar.selectbox("Select Podcast:", options=available_podcast_info.keys())
 
     if selected_podcast:
 
@@ -74,7 +74,7 @@ def main():
     url = st.sidebar.text_input("Get a [Podcast RSS Feed](https://www.listennotes.com/)", placeholder ="Paste RSS Feed link")
 
     process_button = st.sidebar.button("Philosocast Your Podcast Feed!")
-    st.sidebar.markdown("**Note**: Philosocasting can take up to 5 minutes, please be patient.")
+    st.sidebar.markdown("**Note**: Philosocasting can take up to 5 minutes, please be patient...philosophizing ain't easy 😜")
 
     if process_button:
 
