@@ -63,6 +63,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
     # User Input box
+    st.sidebar.image("assets/plato.png")
     st.sidebar.subheader("How to Philosophize a New Podcast Feed")
     openaikey_url = st.sidebar.text_input("Paste your OpenAI API Key kre (sk-...)")
     url = st.sidebar.text_input("Link to RSS Feed")
