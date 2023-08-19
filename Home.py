@@ -16,7 +16,7 @@ def main():
     available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
-    st.sidebar.header("Podcast RSS Feeds  ")
+    st.sidebar.header("Convert your favorite Podcasts into a Platonic Dialogue")
 
     # Dropdown box
     st.sidebar.subheader("Available Podcasts Feeds")
